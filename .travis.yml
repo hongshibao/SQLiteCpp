@@ -5,7 +5,7 @@ language: cpp
 # compilers to add to build matrix
 compiler:
   - gcc
-  - clang
+# - clang # TODO commented out because no gcov
 
 sudo: false
 
