@@ -87,7 +87,7 @@ int Backup::executeStep(const int aNumPage /* = -1 */)
     {
         std::string strerr("Backup executeStep error");
 #if SQLITE_VERSION_NUMBER >= 3007015  // SQLite v3.7.15 is the first version with sqlite3_errstr() interface
-        strerr += "with error message ";
+        strerr += " with error message: ";
         strerr += sqlite3_errstr(res);
 #endif
         throw SQLite::Exception(strerr);
